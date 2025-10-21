@@ -1,3 +1,10 @@
+[webservers]
 host-server-01 ansible_host=127.0.0.1 ansible_port=2201
 host-server-02 ansible_host=127.0.0.1 ansible_port=2202
 host-server-03 ansible_host=127.0.0.1 ansible_port=2203
+
+[all:vars]
+ansible_user=root
+; ansible_password=senha
+; ansible_become=yes 
+ansible_python_interpreter=/usr/bin/python3
